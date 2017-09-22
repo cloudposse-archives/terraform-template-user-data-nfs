@@ -1,9 +1,36 @@
-variable "namespace" {}
+variable "namespace" {
+  description = ""
+}
 
-variable "stage" {}
+variable "stage" {
+  description = ""
+}
 
-variable "name" {}
+variable "name" {
+  description = ""
+}
 
-variable "dir" {}
+variable "delimiter" {
+  description = ""
+  default = "-"
+}
 
-variable "host" {}
+variable "attributes" {
+  description = ""
+  type    = "list"
+  default = []
+}
+
+variable "tags" {
+  description = ""
+  type    = "map"
+  default = {}
+}
+
+variable "dir" {
+  description = ""
+}
+
+variable "host" {
+  description = ""
+}
