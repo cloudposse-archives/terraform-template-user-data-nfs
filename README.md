@@ -1,4 +1,4 @@
-# terraform-template-user-data-nfs
+# terraform-template-ubuntu-nfs-user-data
 
 Terraform module designed to use template file to generate the bootstrap shell script `user_data.sh`
 
@@ -8,7 +8,7 @@ Include this module in your existing terraform code:
 
 ```hcl
 module "user_data_nfs" {
-  source = "git::https://github.com/cloudposse/terraform-template-user-data-nfs.git?ref=master"
+  source = "git::https://github.com/cloudposse/terraform-template-ubuntu-nfs-user-data.git?ref=master"
   namespace                  = "${var.namespace}"
   name                       = "${var.name}"
   stage                      = "${var.stage}"
@@ -33,14 +33,14 @@ module "user_data_nfs" {
 
 **Got a question?**
 
-Review the [docs](docs/), file a GitHub [issue](https://github.com/cloudposse/terraform-template-user-data-nfs/issues), send us an [email](mailto:hello@cloudposse.com) or reach out to us on [Gitter](https://gitter.im/cloudposse/).
+Review the [docs](docs/), file a GitHub [issue](https://github.com/cloudposse/terraform-template-ubuntu-nfs-user-data/issues), send us an [email](mailto:hello@cloudposse.com) or reach out to us on [Gitter](https://gitter.im/cloudposse/).
 
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/cloudposse/terraform-template-user-data-nfs/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/cloudposse/terraform-template-ubuntu-nfs-user-data/issues) to report any bugs or file feature requests.
 
 ### Developing
 
