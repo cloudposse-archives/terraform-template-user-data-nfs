@@ -28,9 +28,14 @@ variable "tags" {
 }
 
 variable "dir" {
-  description = ""
+  description = "Directory mount to"
 }
 
 variable "host" {
-  description = ""
+  description = "NFS server host"
+}
+
+variable "os" {
+  default = "ubuntu"
+  description = "Server OS that will execute user data script"
 }
