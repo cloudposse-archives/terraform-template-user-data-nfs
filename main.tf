@@ -14,7 +14,7 @@ data "template_file" "default" {
   template = "${file(local.template_path)}"
 
   vars {
-    dir       = "${var.dir}"
-    host       = "${var.host}"
+    dir  = "${var.dir}"
+    host = "${var.host}"
   }
 }
