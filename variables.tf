@@ -12,25 +12,30 @@ variable "name" {
 
 variable "delimiter" {
   description = ""
-  default = "-"
+  default     = "-"
 }
 
 variable "attributes" {
   description = ""
-  type    = "list"
-  default = []
+  type        = "list"
+  default     = []
 }
 
 variable "tags" {
   description = ""
-  type    = "map"
-  default = {}
+  type        = "map"
+  default     = {}
 }
 
 variable "dir" {
-  description = ""
+  description = "Directory mount to"
 }
 
 variable "host" {
-  description = ""
+  description = "NFS server host"
+}
+
+variable "os" {
+  default     = "ubuntu"
+  description = "Server OS that will execute user data script"
 }

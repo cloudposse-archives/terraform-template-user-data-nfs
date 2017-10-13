@@ -6,11 +6,15 @@ module "label" {
   stage     = "${var.stage}"
 }
 
+locals {
+  template_path = "${path.module}/templates/${var.os}.sh"
+}
+
 data "template_file" "default" {
-  template = "${file("${path.module}/user_data.sh")}"
+  template = "${file(local.template_path)}"
 
   vars {
-    dir       = "${var.dir}"
-    host       = "${var.host}"
+    dir  = "${var.dir}"
+    host = "${var.host}"
   }
 }
