@@ -1,30 +1,30 @@
 variable "namespace" {
-  description = ""
+  description = "Namespace, which could be your organization name, e.g. 'cp' or 'cloudposse'"
 }
 
 variable "stage" {
-  description = ""
+  description = "Stage, e.g. 'prod', 'staging', 'dev', or 'test'"
 }
 
 variable "name" {
-  description = ""
+  description = "Solution name, e.g. 'app' or 'jenkins'"
 }
 
 variable "delimiter" {
-  description = ""
   default     = "-"
+  description = "Delimiter to be used between `name`, `namespace`, `stage`, etc."
 }
 
 variable "attributes" {
-  description = ""
   type        = "list"
   default     = []
+  description = "Additional attributes (e.g. `policy` or `role`)"
 }
 
 variable "tags" {
-  description = ""
   type        = "map"
   default     = {}
+  description = "Additional tags (e.g. `map('BusinessUnit`,`XYZ`)"
 }
 
 variable "dir" {
