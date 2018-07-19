@@ -1,0 +1,64 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-template-user-data-nfs
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/terraform-template-user-data-nfs
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/terraform-template-user-data-nfs.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-nfs"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/terraform-template-user-data-nfs.svg"
+    url: "https://github.com/cloudposse/terraform-template-user-data-nfs/releases/latest"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+related:
+  - name: "terraform-template-user-data-github-authorized-keys"
+    description: "Terraform template user data github authorized keys"
+    url: "https://github.com/cloudposse/terraform-template-user-data-github-authorized-keys"
+
+# Short description of this project
+description: |-
+  Terraform module designed to use template file to generate the bootstrap shell script `user_data.sh`
+
+# How to use this project
+usage: |-
+  Include this module in your existing terraform code:
+
+  ```hcl
+  module "user_data_nfs" {
+    source = "git::https://github.com/cloudposse/terraform-template-user-data-nfs.git?ref=master"
+    namespace                  = "${var.namespace}"
+    name                       = "${var.name}"
+    stage                      = "${var.stage}"
+    dir                        = "${var.dir}"
+    host                       = "${var.host}"
+  }
+  ```
+
+include:
+  - "docs/targets.md"
+  - "docs/terraform.md"
+
+# Contributors to this project
+contributors:
+  - name: "Igor Rodionov"
+    github: "goruha"
+  - name: "Sergey Vasilyev"
+    github: "s2504s"
