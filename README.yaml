@@ -7,6 +7,18 @@
 # Name of this project
 name: terraform-template-user-data-nfs
 
+# Tags of this project
+tags:
+  - aws
+  - terraform
+  - terraform-modules
+  - user-data
+  - nfs
+
+# Categories of this project
+categories:
+  - terraform-modules/user-data
+
 # Logo for this project
 #logo: docs/logo.png
 
